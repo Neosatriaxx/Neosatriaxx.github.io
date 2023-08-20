@@ -1,0 +1,39 @@
+body {
+    background-color:rgb(58, 58, 58);
+    color: #efefef;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    margin: 10px;
+    padding: 1px;
+    box-sizing: content-box;
+}
+
+a {
+    font-weight: 400;
+    display: block;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.idximg {
+    width: 100%;
+}
+
+h1 {
+    text-align: center;
+    line-height: 2;
+}
+
+.abouttitle {
+    position: relative;
+    margin-left: 30%;
+    margin-top: 100px;
+}
+
+p {
+    position: relative;
+    margin-left: 30%;
+    margin-top: 20px;
+    line-height: 1.6;
+}
