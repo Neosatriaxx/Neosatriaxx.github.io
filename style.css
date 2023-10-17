@@ -1,0 +1,279 @@
+body, html {
+    height: 100%;
+    margin: 0;
+  }
+
+  .horizontal-placement {
+    text-align: center;
+    padding: 10px;
+  }
+
+  .horizontal-content {
+    display: inline-block;
+    width: 325px;
+    height: 450px;
+    border-radius: 4px;
+    margin-bottom: 30px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .horizontal-content a {
+    position: relative;
+      display: inline-block;
+  }
+  
+  .horizontal-content a img {
+      display: block;
+      max-width: 100%;
+  }
+
+  .horizontal-content h2 {
+    position: absolute;
+    text-align: left;
+    margin: 15px;
+    width: 325px;
+    height: 450px;
+    z-index: 1;
+    display: flex;
+    align-items: flex-end;
+  }
+
+  .horizontal-img {
+    width: 325px;
+    height: 450px;
+    object-fit: cover;
+    border-radius: 4px;
+    -webkit-mask-image:-webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));
+      mask-image: linear-gradient(to bottom, rgba(0,0,0,1), rgba(0,0,0,0));
+  }
+
+  .ghost-header {
+    width: 100%;
+    height: 100px;
+  }
+
+  .background-image {
+    position: fixed;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    display: block;
+    background-image: url('img/background2.jpg');
+    width: 100%;
+    height: 100%;
+    -webkit-filter: blur(10px);
+    -moz-filter: blur(10px);
+    -o-filter: blur(10px);
+    -ms-filter: blur(10x);
+    filter: blur(10px);
+  }
+
+  .img-first-view {
+    width: 100%;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+  }
+
+  .textsettings {
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+
+  .name {
+    text-align:left;
+  }
+  
+  .content {
+    position: relative;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+  }
+  
+  article {
+    margin: 20px;
+    padding-bottom: calc(4% + 10px);
+    background: rgba(243, 243, 243, 0.92);
+    border-radius: 4px;
+  }
+  
+  article h1, article h2, article h3, article h4, article h5, article h6, article p, article a, article u, article o {
+    color: #000000;
+  }
+  
+  /* Style the header with a grey background and some padding */
+  .header {
+    overflow: hidden;
+    background-color: #e0e0e0;
+    padding: 20px 25px;
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+  }
+  
+  /* Style the header links */
+  .header a {
+    float: left;
+    color: #303030;
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 25px;
+    border-radius: 4px;
+  }
+  
+  /* Style the logo link (notice that we set the same value of line-height and font-size to prevent the header to increase when the font gets bigger */
+  .header a.logo {
+    font-size: 25px;
+    font-weight: bold;
+    background-color: #e0e0e0;
+    padding: 0px;
+    margin-right: 10px;
+    border-radius: 4px;
+    display: inline-block;
+    margin-top:-10px;
+    margin-bottom: -10px;
+  }
+
+  .header a.logo img {
+    width: 80px;
+  }
+
+  .header a.logo:hover {
+    font-size: 25px;
+    background-color: #aaaaaa;
+  }
+  
+  /* Change the background color on mouse-over */
+  .header a:hover {
+    background-color: #aaaaaa;
+    color: white;
+  }
+  
+  /* Style the active/current link*/
+  .header a.active {
+    background-color: #adadad;
+    color: rgb(255, 255, 255);
+  }
+  
+  .header a.active:hover {
+    background-color: #0099ff;
+    color: white;
+  }
+  
+  /* Float the link section to the right */
+  .header-right {
+    float: right;
+  }
+  
+  /* Add media queries for responsiveness - when the screen is 500px wide or less, stack the links on top of each other */
+  @media screen and (max-width: 600px) {
+    .header a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+    .header-right {
+      float: none;
+    }   
+    
+    .header a.logo {
+      margin-bottom: 40px;
+      
+    }
+    .ghost-header {
+      height: 300px;
+    }
+  }
+  
+  .footer-clean {
+    padding:50px 0;
+    background-color:#e0e0e0;
+    color:#494949;
+  }
+  
+  .footer-clean h3 {
+    margin-top:0;
+    margin-bottom:12px;
+    font-weight:bold;
+    font-size:16px;
+  }
+  
+  .footer-clean ul {
+    padding:0;
+    list-style:none;
+    line-height:1.6;
+    font-size:14px;
+    margin-bottom:0;
+  }
+  
+  .footer-clean ul a {
+    color:inherit;
+    text-decoration:none;
+    opacity:0.8;
+  }
+  
+  .footer-clean ul a:hover {
+    opacity:1;
+  }
+  
+  .footer-clean .item.social {
+    text-align:right;
+  }
+  
+  @media (max-width:767px) {
+    .footer-clean .item {
+      text-align:center;
+      padding-bottom:20px;
+    } 
+  }
+  
+  @media (max-width: 768px) {
+    .footer-clean .item.social {
+      text-align:center;
+    }
+  }
+  
+  .footer-clean .item.social > a {
+    font-size:24px;
+    width:40px;
+    height:40px;
+    line-height:40px;
+    display:inline-block;
+    text-align:center;
+    border-radius:50%;
+    border:1px solid #ccc;
+    margin-left:10px;
+    margin-top:22px;
+    color:inherit;
+    opacity:0.75;
+  }
+  
+  .footer-clean .item.social > a:hover {
+    opacity:0.9;
+  }
+  
+  @media (max-width:991px) {
+    .footer-clean .item.social > a {
+      margin-top:40px;
+    }
+  }
+  
+  @media (max-width:767px) {
+    .footer-clean .item.social > a {
+      margin-top:10px;
+    }
+  }
+  
+  .footer-clean .copyright {
+    margin-top:14px;
+    margin-bottom:0;
+    font-size:13px;
+    opacity:0.6;
+  }
+  
+  /* Credit to https://epicbootstrap.com/snippets/footer-with-columns */
