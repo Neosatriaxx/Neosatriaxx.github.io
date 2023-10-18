@@ -22,13 +22,9 @@ body, html {
     position: relative;
       display: inline-block;
   }
-  
-  .horizontal-content a img {
-      display: block;
-      max-width: 100%;
-  }
 
-  .horizontal-content h2 {
+
+  .horizontal-content a h2 {
     position: absolute;
     text-align: left;
     margin: 15px;
@@ -46,6 +42,8 @@ body, html {
     border-radius: 4px;
     -webkit-mask-image:-webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));
       mask-image: linear-gradient(to bottom, rgba(0,0,0,1), rgba(0,0,0,0));
+      display: block;
+      max-width: 100%;
   }
 
   .ghost-header {
@@ -190,17 +188,18 @@ body, html {
     }
 
     .horizontal-content {
-      width: 225px;
-      height: 350px;
+      width: 50vw;
+      height: 75vw;
     }
   
-    .horizontal-content h2 {
-      width: 225px;
-      height: 350px;
+    .horizontal-content a h2 {
+      font-size: 5vw;
+      width: 50vw;
+      height: 75vw;
     }
     .horizontal-img {
-      width: 225px;
-      height: 350px;
+      width: 50vw;
+      height: 75vw;
     }
   }
   
