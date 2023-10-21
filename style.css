@@ -125,7 +125,7 @@ body, html {
   }
   
   /* Style the logo link (notice that we set the same value of line-height and font-size to prevent the header to increase when the font gets bigger */
-  .header a.logo {
+  a.logo {
     font-size: 25px;
     font-weight: bold;
     background-color: #e0e0e0;
@@ -137,11 +137,11 @@ body, html {
     margin-bottom: -10px;
   }
 
-  .header a.logo img {
+  a.logo img {
     width: 80px;
   }
 
-  .header a.logo:hover {
+  a.logo:hover {
     font-size: 25px;
     background-color: #aaaaaa;
   }
@@ -200,6 +200,17 @@ body, html {
     .horizontal-img {
       width: 50vw;
       height: 75vw;
+    }
+    .logo {
+      height: 50px;
+      width: 50px;
+    }
+    a.logo img {
+      height: 60px;
+      width: 60px;
+    }
+    .header a.logo {
+      margin-bottom:20px;
     }
   }
   
